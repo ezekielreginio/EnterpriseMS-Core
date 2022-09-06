@@ -28,8 +28,9 @@ class LoginController extends Controller
         ]);
  
         if (Auth::attempt($request->only('email', 'password'))) {
- 
-            return response()->json(['isSuccess'=> 0]);
+            $token = $request->user()->createToken('authToken');
+            return response()->json(["access_token" => $token->plainTextToken, "token_type" => 'Bearer']);
+            // return view('index');
         } 
  
         throw ValidationException::withMessages([
