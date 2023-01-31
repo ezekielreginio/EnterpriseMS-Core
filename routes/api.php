@@ -21,5 +21,3 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('test', "LoginController@test");
 Route::post('login', "LoginController@authenticate");
 
-Route::middleware('auth:sanctum')->post('/task', "TaskController@store");
-Route::middleware('auth:sanctum')->get('/task/all', "TaskController@getAll");
