@@ -6,7 +6,7 @@
                     <div class="hr-bros"></div>
                     <p class="py-3 ps-1">HR <br> MANAGER</p>
                 </div>
-                <p class="text-danger fw-bold">SIGN IN TO </p>
+                <p class="text-danger fw-bold">SIGN IN TO</p>
                 <p class="hris-header fw-bold fs-1">HUMAN RESOURCES</p>
                 <p class="fs-10 text-secondary">Log in with your data that you entered during your registration, or with the credentials provided by your organization administrator. </p>
 
