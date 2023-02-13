@@ -1,7 +1,7 @@
 export default {
     namespaced: true,
     state:{
-        currentView: 'login-form'
+        currentView: 'login-component'
     },
     getters:{
         getCurrentView: (state) => {
