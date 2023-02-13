@@ -7,9 +7,10 @@ import welcome from './modules/welcome.js'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-    plugins:[
-        createPersistedState()
-    ],
+    //Uncomment for VueX persisted state
+    // plugins:[
+    //     createPersistedState()
+    // ],
     modules:{
         auth,
         welcome

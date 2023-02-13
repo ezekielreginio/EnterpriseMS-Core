@@ -15,12 +15,20 @@
             </div>
             <div class="d-grid gap-2 mt-3">
                 <button class="btn primary-bg text-white py-3 btn-text" type="button">LOG IN</button>
-                <p class="text-primary cursor-pointer text-center pt-5 fs-5" @click.prevent="contactUs()">Inquire Today, Click Here!</p>
+                <p class="text-primary cursor-pointer text-center pt-5 fs-5" @click.prevent="changeView('inquiry-form-component')">Inquire Today, Click Here!</p>
             </div>
         </div> 
     </div>
 </template>
 
 <script>
-    
+import { mapActions } from 'vuex'
+
+export default {
+    methods: {
+        ...mapActions({
+            changeView: 'welcome/setCurrentView'
+        }),
+    }
+}
 </script>
