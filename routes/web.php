@@ -24,3 +24,7 @@ Route::get('/login', function () {
 Route::get('/index', function () {
     return view('index');
 })->middleware('auth');
+
+Route::get('/home', function () {
+    return view('dashboard.index');
+})->name('home');

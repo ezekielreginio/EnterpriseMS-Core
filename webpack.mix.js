@@ -11,6 +11,15 @@ const mix = require('laravel-mix');
  |
  */
 
+// Javascript Mixs
 mix.js('resources/js/app.js', 'public/js')
     .vue()
     .sass('resources/sass/app.scss', 'public/css');
+
+mix.js('resources/js/dashboard/dashboard.js', 'public/js')
+
+// Css Mixs
+mix.styles(['resources/css/dashboard/main.css',
+'resources/css/dashboard/color.css',
+'resources/css/dashboard/normalize.css',
+'resources/css/dashboard/typography.css', ], 'public/css/dashboard.css')
